@@ -1,0 +1,5 @@
+slp_statistic.add_form:
+  title: 'Add slp statistic'
+  route_name: entity.slp_statistic.add_form
+  appears_on:
+    - entity.slp_statistic.collection

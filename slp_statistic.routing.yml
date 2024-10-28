@@ -1,0 +1,7 @@
+entity.slp_statistic.settings:
+  path: 'admin/structure/slp-statistic'
+  defaults:
+    _form: '\Drupal\slp_statistic\Form\SlpStatisticSettingsForm'
+    _title: 'Slp statistic'
+  requirements:
+    _permission: 'administer slp_statistic'

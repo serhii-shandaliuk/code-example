@@ -1,0 +1,3 @@
+administer slp_statistic:
+  title: 'Administer slp statistics'
+  restrict access: true

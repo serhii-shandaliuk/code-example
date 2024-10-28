@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * File slp_statistic.module.
+ */
+
+
+/**
+ * Implements hook_cron().
+ */
+function slp_statistic_cron(): void {
+  $storage = Drupal::service('entity_type.manager')->getStorage('user');
+  $user_query = $storage->getQuery();
+  $user_query->accessCheck();
+  $group = $user_query
+    ->orConditionGroup()
+    ->condition('field_expired.value', FALSE)
+    ->notExists('field_expired.value');
+
+  $user_query->condition($group);
+  $users = $user_query->execute();
+  if (!empty($users)) {
+    foreach ($users as $user) {
+      Drupal::queue('calculate_user_statistic')->createItem($user);
+    }
+  }
+}

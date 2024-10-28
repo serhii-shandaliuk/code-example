@@ -1,0 +1,5 @@
+name: 'Slp statistic'
+type: module
+description: 'Provides statistic functionality.'
+package: SLP
+core_version_requirement: ^10

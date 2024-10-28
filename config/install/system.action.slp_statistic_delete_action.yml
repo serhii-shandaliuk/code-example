@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - slp_statistic
+id: slp_statistic_delete_action
+label: 'Delete slp statistics'
+type: slp_statistic
+plugin: entity:delete_action:slp_statistic
+configuration: {  }

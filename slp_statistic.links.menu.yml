@@ -1,0 +1,11 @@
+entity.slp_statistic.settings:
+  title: 'Slp statistic'
+  description: 'Configure a Slp statistic entity type.'
+  route_name:  entity.slp_statistic.settings
+  parent: system.admin_structure
+
+entity.slp_statistic.collection:
+  title: 'Slp statistics'
+  description: 'List of slp statistics.'
+  route_name: entity.slp_statistic.collection
+  parent: system.admin_content

@@ -1,0 +1,4 @@
+services:
+  slp_statistic.manager:
+    class: Drupal\slp_statistic\StatisticManager
+    arguments: ['@entity_type.manager', '@logger.factory', '@current_user', '@slp_school.school_manager']

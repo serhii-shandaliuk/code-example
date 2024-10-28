@@ -1,0 +1,9 @@
+entity.slp_statistic.settings:
+  title: 'Settings'
+  route_name: entity.slp_statistic.settings
+  base_route: entity.slp_statistic.settings
+entity.slp_statistic.collection:
+  title: 'Slp statistics'
+  route_name: entity.slp_statistic.collection
+  base_route: system.admin_content
+  weight: 10
